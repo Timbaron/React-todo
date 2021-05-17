@@ -14,7 +14,7 @@ export function App() {
         <h1>Timothy Todo List</h1>
       </header>
     <Todo_Form setTodos={setTodos} todos={todos} InputText={InputText} setInputText={setInputText} />
-      <TodoList />
+      <TodoList setTodos={setTodos} todos={todos} />
     </div>
   );
 }

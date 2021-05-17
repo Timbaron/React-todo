@@ -8,6 +8,7 @@ export function Todo_Form({setInputText,todos,setTodos,InputText}) {
         e.preventDefault();
         setTodos(
             [
+                ...todos,
                 {text:InputText, completed:false, id:Math.random() * 1000}
             ]
         )
