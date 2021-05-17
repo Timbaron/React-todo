@@ -3,11 +3,11 @@ import React from 'react';
 // Import Todo 
 import Todo from './Todo';
 
-export function TodoList({todos,setTodos}) {
+export function TodoList({todos,setTodos, filteredTodos}) {
     return (
         <div className="todo-container">
             <ul className="todo-list">
-                {todos.map((todo) => (
+                {filteredTodos.map((todo) => (
                     <Todo setTodos={setTodos}
                      todos={todos}
                      text={todo.text}
