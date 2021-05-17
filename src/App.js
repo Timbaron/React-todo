@@ -51,7 +51,7 @@ export function App() {
   return (
     <div className="App">
       <header>
-        <h1>Timothy Todo List</h1>
+        <h1>Echo Todo List</h1>
       </header>
     <Todo_Form setTodos={setTodos} todos={todos} InputText={InputText} setInputText={setInputText} setStatus={setStatus} />
       <TodoList setTodos={setTodos} todos={todos} filteredTodos={filteredTodos} />
